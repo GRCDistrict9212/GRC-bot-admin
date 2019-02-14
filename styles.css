@@ -1,0 +1,65 @@
+body {
+    margin: 10px 50px;
+}
+
+.grcbotadmin-logo, .grcbotadmin-nav-items, .grcbotadmin-main-wrapper, .grcbotadmin-main-content-manage, .grcbotadmin-footer {
+    padding: 10px 40px;
+    line-height: 1.3em;
+}
+
+/* NAV ELEMENTS */
+
+.grcbotadmin-nav-wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.grcbotadmin-logo {
+    text-align: center;
+    margin: 0%;
+    padding: 0px;
+    padding-top: 60px;
+    font-size: 22px;
+}
+
+
+.grcbotadmin-nav-items {
+    display: block;
+    margin: 0%;
+    padding: 0px;
+    padding-top: 60px;
+    font-size: 22px;
+    color: black;
+}
+
+.grcbotadmin-nav-items ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.grcbotadmin-nav-items ul li a {
+    text-decoration: none;
+}
+
+.grcbotadmin-nav-items ul li a:hover {
+    text-decoration: underline;
+}
+
+.grcbotadmin-nav-items ul li {
+    display: inline;
+    padding: 20px;
+}
+
+/* END OF NAV ELEMENTS */
+
+.grcbotadmin-main-wrapper {
+    background-color: blue;
+}
+
+.grcbotadmin-main-content-manage {
+    background-color:white;
+}
+
+.grcbotadmin-footer {
+    background-color: green;
+}
