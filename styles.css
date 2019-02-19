@@ -1,5 +1,7 @@
 body {
     margin: 10px 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #444;
 }
 
 .grcbotadmin-logo, .grcbotadmin-nav-items, .grcbotadmin-main-wrapper, .grcbotadmin-main-content-manage, .grcbotadmin-footer {
@@ -18,7 +20,7 @@ body {
     text-align: center;
     margin: 0%;
     padding: 0px;
-    padding-top: 60px;
+    padding-top: 40px;
     font-size: 22px;
 }
 
@@ -27,9 +29,9 @@ body {
     display: block;
     margin: 0%;
     padding: 0px;
-    padding-top: 60px;
-    font-size: 22px;
-    color: black;
+    padding-top: 40px;
+    font-size: 17px;
+    font-family: monospace;
 }
 
 .grcbotadmin-nav-items ul {
@@ -39,10 +41,14 @@ body {
 
 .grcbotadmin-nav-items ul li a {
     text-decoration: none;
+    color: #444;
+    padding: 10px;
 }
 
 .grcbotadmin-nav-items ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    box-shadow: 0px 0px 4px #444;
+    padding: 10px;
 }
 
 .grcbotadmin-nav-items ul li {
@@ -52,14 +58,39 @@ body {
 
 /* END OF NAV ELEMENTS */
 
-.grcbotadmin-main-wrapper {
-    background-color: blue;
+.grcbotadmin-main-content-manage {
+    background-color:whitesmoke;
+    width: fit-content;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    
+}
+.grcbotadmin-main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.grcbotadmin-main-content-manage {
-    background-color:white;
+.grcbotadmin-main-content h3 {
+    padding: 20px;
+    margin-right: 150px;
+}
+
+.grcbotadmin-main-content a {
+    padding: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.grcbotadmin-main-content a:hover {
+    background-color: blueviolet;
+    text-decoration: none;
+    color: white;
 }
 
 .grcbotadmin-footer {
-    background-color: green;
+    text-align: center;
 }
