@@ -80,13 +80,15 @@ body {
     margin: 10px;
     text-decoration: none;
     font-size: 20px;
-    background-color: aqua;
+    background-color: darkblue;
     text-align: center;
     border: 1px solid white;
+    font-weight: bold;
+    color: white;
 }
 
 .grcbotadmin-main-content a:hover {
-    background-color: blueviolet;
+    background-color: cadetblue;
     text-decoration: none;
     color: white;
 }

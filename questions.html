@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="table.css">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 </head>
@@ -30,36 +31,43 @@
 <div class="grcbotadmin-main-wrapper">
   <div class="grcbotadmin-main-content-manage">
     
-    <div class="grcbotadmin-main-content">
-      <h3>Manage Comments</h3>
-      <a href="comments.html">Comments</a>
-    </div>
-
-    <div class="grcbotadmin-main-content">
-        <h3>Manage Questions</h3>
-        <a href="">Questions</a>
-    </div>
+    <h3>Questions</h3>
+    <div class="questions">
+      <table>
+        <thead>
+          <th class="telegramUsername">Telegram Username</th>
+          <th class="question">Question</th>
+          <th class="date">Date</th>
+          <th class="button">Replay</th>
+        </thead>
+        <tbody id="table_body">
     
-    <div class="grcbotadmin-main-content">
-        <h3>Manage Events</h3>
-        <a href="">Events</a>
+        </tbody>
+      </table>
+      <hr>
     </div>
-    
-    <div class="grcbotadmin-main-content">
-        <h3>Manage FAQs</h3>
-        <a href="">FAQs</a>
-    </div>
-    
-    <div class="grcbotadmin-main-content">
-        <h3>Manage Members</h3>
-        <a href="">Members</a>
-    </div>
-    
   </div>
 </div>
 <footer class="grcbotadmin-footer">
   
   <div class="copyright">http://grcbot.rf.gd &copy; 2019</div>
 </footer>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBMEhokJYrKEMplP2NO7LJR4xyHa9BtOuM",
+    authDomain: "grc-telegram-bot-46a1e.firebaseapp.com",
+    databaseURL: "https://grc-telegram-bot-46a1e.firebaseio.com",
+    projectId: "grc-telegram-bot-46a1e",
+    storageBucket: "grc-telegram-bot-46a1e.appspot.com",
+    messagingSenderId: "66215704696"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="questions.js"></script>
+
 </body>
 </html>
