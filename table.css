@@ -3,6 +3,10 @@ th {
     text-align: left;
 }
 
+th {
+    border-bottom: 1px solid black;
+}
+
 .telegramUsername {
     padding: 20px;
 }
